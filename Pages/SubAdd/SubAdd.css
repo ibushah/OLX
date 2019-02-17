@@ -1,0 +1,279 @@
+/* initial css */
+
+*
+{
+    margin:0px;
+    padding: 0px;
+
+}
+
+
+body
+{
+    background-color: #FFFFFF;
+}
+
+
+/* **********LOGO********* */
+
+
+
+#logo::first-letter{
+    font-size: 45px !important;
+    font-weight: bold;
+}
+#logo
+{
+    margin-left: 5px !important;
+}
+
+#icon_prefix
+{
+   color: wheat !important;
+   font-style: oblique;
+}
+
+
+
+/* ********NAVBAR********* */
+
+nav
+{
+    background: linear-gradient(90deg,#1a0c39,#5a2a4d);
+    margin-top: -10px;
+}
+
+#mobile-demo
+{
+    background: linear-gradient(90deg,#1a0c39,#5a2a4d);
+}
+
+#mobile-demo li a
+{
+    color: white;
+}
+
+#mobile-demo li:hover
+{
+    background-color: rgb(127, 14, 172);
+}
+
+
+#fb
+{
+    width:23px;
+    float: left;
+    margin-top:22px; 
+    margin-right: 8px; 
+}
+
+
+#fb-mob
+{
+    width:23px;
+    float: left;
+    margin-top: 12px;
+    margin-right: 4px;
+}
+
+/* ******************wrap**************** */
+
+input
+{
+    color: white !important;
+}
+
+.underWrap
+{
+    border: 1px solid black;
+   height:100vh;
+}
+
+
+/* ****************DROPDOWN****************** */
+
+
+#categories
+{
+   margin-top: 3%;
+   height:55px !important;
+    width:100%;
+    
+    border:1px solid black;
+    background: linear-gradient(90deg,#1a0c39,#5a2a4d);
+   
+}
+
+#cat
+{
+    height:55px !important;
+    font-weight: bold !important;
+    font-family: sans-serif;
+    width:100%;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    color:white;
+}
+
+#dropdown1 li a
+{
+    color:purple !important;
+
+}
+
+#search
+{
+    background: linear-gradient(90deg,#1a0c39,#5a2a4d);
+    color:white !important;
+    border:1px solid black;
+    width:100%;
+}
+
+#type
+{
+    width:90%;
+    background: linear-gradient(90deg,#1a0c39,#5a2a4d);
+    margin-left: 5%;
+}
+
+#title
+{
+    background: linear-gradient(90deg,#1a0c39,#5a2a4d);
+    width:90%;
+   
+    margin-left:5%; 
+}
+
+/* 
+*******************TEXT AREA******************* */
+
+
+
+.textArea
+{
+    /* background: linear-gradient(90deg,#1a0c39,#5a2a4d);
+    color:white; */
+
+   height:80px !important;
+    width:94%;
+    margin-left: 3%;
+    
+    border:1px solid black;
+    background: linear-gradient(90deg,#1a0c39,#5a2a4d);
+   
+
+    
+}
+
+#textarea1
+{
+color:white;
+background: linear-gradient(90deg,#1a0c39,#5a2a4d);
+text-indent: 3%;
+
+
+}
+
+
+#price
+{
+    background: linear-gradient(90deg,#1a0c39,#5a2a4d);
+    margin-left:5%;
+
+}
+
+#address
+{
+    background: linear-gradient(90deg,#1a0c39,#5a2a4d);
+  
+    width: 98%;
+}
+
+/* *************PICTURES********* */
+
+#picsWrap
+{
+   
+    width:90%;
+    
+    margin-left:5%; 
+}
+
+.picBtn
+{
+   
+    background: linear-gradient(90deg,#1a0c39,#5a2a4d);
+    width:60px;
+    height: 50px;
+    border-radius: 0px;
+    margin-right:10px; 
+}
+
+.picBtn i
+{
+    font-size: 30px;
+    line-height: 50px;
+}
+
+
+#pic1
+{
+
+    display:none;
+
+}
+#pic2
+{
+    
+    display:none;
+
+}
+#pic3
+{
+    
+    display:none;
+
+}
+#pic4
+{
+    
+    display:none;
+
+}
+#pic5
+{
+    
+    display:none;
+
+}
+#pic6
+{
+    
+    display:none;
+
+}
+
+
+
+
+.submit
+{
+    width: 96%;
+    margin-left:2%;
+    height:50px;
+    background: linear-gradient(90deg,#1a0c39,#5a2a4d);
+
+}
+
+/* *************MEDIA QUIERIES********** */
+
+
+
+@media only screen and (max-width: 900px) {
+    .picBtn {
+    margin-right:0px !important; 
+    width:55px;
+    height: 45px;
+    }
+  }

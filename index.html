@@ -1,0 +1,313 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/Style.css">
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="./materialize/css/materialize.min.css">
+
+
+</head>
+
+<body>
+
+    <!-- ************NAVBAR*********** -->
+    <div class="container-fluid" id="top">
+        <div class="navbar-fixed">
+            <nav>
+                <div class="nav-wrapper ">
+                    <a href="#!" class="brand-logo " id="logo"><i class="material-icons right">shopping_cart</i>OLX</a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="../../index.html">Home</a></li>
+                        <li id="add" class="active"><a href="badges.html">POST ADD</a></li>
+
+                        <li id="fb-li" onClick="fbLogin()"><a href="#"><img id="fb" src="./Images/fb.png" /> FB
+                                Login</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">POST ADD</a></li>
+
+            <li id="fb-li" onclick="fbLogin()"><a href="#"><img id="fb-mob" src="./Images/fb.png" /> FB
+                    Login</a>
+            </li>
+        </ul>
+
+    </div>
+
+
+
+    <!-- ****************BELOW SEARCH************* -->
+
+    <div class="container-fluid">
+
+        <div class="row">
+
+
+
+
+            <!-- ************SEARCH BAR************* -->
+
+            <div class="col l9 m12 s12">
+
+                <div class="input-field col s12 z-depth-5 " id="search">
+                    <i class="material-icons prefix ">search</i>
+                    <input id="icon_prefix" type="text" class="validate">
+                    <label for="icon_prefix">Search</label>
+                </div>
+
+            </div>
+
+
+            <!-- ***********DROPDOWN************** -->
+            <div class="col l3 m12 s12">
+                <div class="z-depth-5" id="categories">
+                    <a class='dropdown-trigger' id="cat" href='#' data-target='dropdown1'>CATEGORIES TO SEARCH
+                        &#8744;</a>
+
+                    <!-- Dropdown Structure -->
+                    <ul id='dropdown1' class='dropdown-content'>
+                        <li><a href="#!">Mobiles</a></li>
+                        <li><a href="#!">Vehicles</a></li>
+
+                        <li><a href="#!">Furniture</a></li>
+                        <li><a href="#!">Jobs</i>four</a></li>
+                        <li><a href="#!">Fashion</i>five</a></li>
+                        <li><a href="#!">Book</i>five</a></li>
+
+                    </ul>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+    <!-- ***************BODY IMAGE************** -->
+
+
+    <div class="row" id="img">
+        <div class="col xl-12 push-l8 l4 push-m6 m6 s12">
+            <h1 id="body-text">PAKISTAN'S NUMBER 1 MARKET PLACE!</h1>
+        </div>
+    </div>
+
+    <!-- ****************CARDS************** -->
+
+    </div>
+    <div class="row">
+        <div class="col s12">
+            <h1 style="text-align:center; color:rgb(63, 4, 87);">ADS SUGGESTED FOR YOU!</h1>
+        </div>
+    </div>
+    <div class="row" id="adds">
+        <div class="col sm1  m4 l4">
+            <div class="door">
+                <div class="card z-depth-4">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="./Images/pic.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">NOKIA 6<i
+                                class="material-icons right">more_vert</i></span>
+                        <p><button class="btn">Go to add</button></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Card Title<i
+                                class="material-icons right">close</i></span>
+                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col sm1  m4 l4">
+            <div class="door">
+                <div class="card z-depth-4">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="./Images/pic.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">HTC 7<i
+                                class="material-icons right">more_vert</i></span>
+                        <p><button class="btn ">Go to add</button></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Card Title<i
+                                class="material-icons right">close</i></span>
+                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col sm1 m4 l4">
+            <div class="door">
+                <div class="card z-depth-4">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="./Images/pic.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">HP Laptop<i
+                                class="material-icons right">more_vert</i></span>
+                        <p><button class="btn ">Go to add</button></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Card Title<i
+                                class="material-icons right">close</i></span>
+                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col sm1  m4 l4">
+            <div class="door">
+                <div class="card z-depth-4">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="./Images/pic.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">NOKIA 6<i
+                                class="material-icons right">more_vert</i></span>
+                        <p><button class="btn ">Go to add</button></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Card Title<i
+                                class="material-icons right">close</i></span>
+                        <p>Here is some more information about this product that is only revealed once clicked
+                            on.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col sm1  m4 l4">
+            <div class="door">
+                <div class="card z-depth-4">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="./Images/pic.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">NOKIA 6<i
+                                class="material-icons right">more_vert</i></span>
+                        <p><button class="btn ">Go to add</button></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Card Title<i
+                                class="material-icons right">close</i></span>
+                        <p>Here is some more information about this product that is only revealed once clicked
+                            on.</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="col sm1  m4 l4">
+            <div class="door">
+                <div class="card z-depth-4">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="./Images/pic.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">NOKIA 6<i
+                                class="material-icons right">more_vert</i></span>
+                        <p><button class="btn ">Go to add</button></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Card Title<i
+                                class="material-icons right">close</i></span>
+                        <p>Here is some more information about this product that is only revealed once clicked
+                            on.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- ************FOOOOTER*********** -->
+
+
+    <!-- <a style="position:absolute;" href="#top" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a> -->
+
+    <footer class="page-footer">
+        <div class="container" id="upper-foot">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Footer Content</h5>
+                    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer
+                        content.</p>
+                </div>
+                <!-- <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                    </ul>
+                </div> -->
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2019 Copyright Ibrahim Shah
+                <a class="grey-text text-lighten-4 right" href="#!">OLX Pakistan</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- *************JAVASCRIPT*************** -->
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+
+
+    <script src="./materialize/js/materialize.min.js"></script>
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.8.3/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyA7sWg2m5ttyuKRvrmlsbn5Lo2cS3duYG0",
+            authDomain: "olx-app-730ce.firebaseapp.com",
+            databaseURL: "https://olx-app-730ce.firebaseio.com",
+            projectId: "olx-app-730ce",
+            storageBucket: "olx-app-730ce.appspot.com",
+            messagingSenderId: "958146119350"
+        };
+        firebase.initializeApp(config);
+    </script>
+
+    <script>
+
+        $('.dropdown-trigger').dropdown();
+
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+        });
+    </script>
+</body>
+
+</html>

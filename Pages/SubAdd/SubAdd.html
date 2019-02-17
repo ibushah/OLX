@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="../../materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="./SubAdd.css">
+</head>
+
+<body>
+
+
+    <!-- ************NAVBAR*********** -->
+    <div class="container-fluid">
+        <div class="navbar-fixed ">
+            <nav>
+                <div class="nav-wrapper ">
+                    <a href="#!" class="brand-logo " id="logo"><i class="material-icons right"></i>QUIZ APP</a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="../../index.html">Home</a></li>
+                        <li id="add" class="active"><a href="badges.html">Admin Login</a></li>
+
+                        <li id="fb-li" onClick="fbLogin()"><a href="#"><img id="fb" src="../../images/fb.png" /> Student
+                                Login</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+    </div>
+    <!-- *****************MOBILE VIEW**************** -->
+
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="#">Admin Login</a></li>
+
+        <li id="fb-li" onclick="fbLogin()"><a href="#"><img id="fb-mob" src="./../../images/fb.png" />Student
+                Login</a>
+        </li>
+    </ul>
+
+
+    <!-- *****************ADS POSTING*************** -->
+
+
+    <div class="row">
+        <div class="col s12 m12 l8 offset-l2">
+            <div class="wrap">
+
+                <h3 style="text-align:center">POST YOUR AD</h3>
+
+
+                <div class="underWrap">
+                    <div class="col l12 m12 s12">
+                        <div class="row">
+                            <div class="col s12 m12 l12">
+                                <div class="z-depth-5" id="categories">
+                                    <a class='dropdown-trigger' id="cat" href='#' data-target='dropdown1'>CATEGORIES
+                                        &#8744;</a>
+
+                                    <!-- Dropdown Structure -->
+                                    <ul id='dropdown1' class='dropdown-content'>
+                                        <li><a href="#!">Mobiles</a></li>
+                                        <li><a href="#!">Vehicles</a></li>
+
+                                        <li><a href="#!">Furniture</a></li>
+                                        <li><a href="#!">Jobs</i>four</a></li>
+                                        <li><a href="#!">Fashion</i>five</a></li>
+                                        <li><a href="#!">Book</i>five</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ************SEARCH BAR************* -->
+                    <div class="row">
+                        <div class="col l6 m6 s12">
+
+                            <div class="input-field col s12 z-depth-5 " id="type">
+
+                                <input  id="typeIn" type="text" autocomplete="off" class="validate">
+                                <label for="type">Type</label>
+                            </div>
+
+                        </div>
+                        <div class="col l6 m6 s12">
+                            <div class="input-field col s12 z-depth-5 " id="title">
+
+                                <input  id="titleIn" type="text" autocomplete="off" class="validate">
+                                <label for="title">Title</label>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- ***************TEXT AREA**************** -->
+
+
+
+
+                    <div class="row ">
+                        <div class="textArea">
+                            <div class="input-field  col s12 ">
+
+                                <textarea id="textareaIn" class="materialize-textarea" class="validate"></textarea>
+                                <label for="textarea">Description...</label>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- **************PRICE AND ADDRESS******* -->
+
+
+                    <div class="row">
+                        <div class="col l3 m3 s5">
+
+                            <div class="input-field col s12 z-depth-5 " id="price">
+
+                                <input id="priceIn" type="number" autocomplete="off" class="validate">
+                                <label for="price">Price</label>
+                            </div>
+
+                        </div>
+                        <div class="col l9 m9 s7">
+                            <div class="input-field col s12 z-depth-5 " id="address">
+
+                                <input id="addressIn" type="text" autocomplete="off" class="validate">
+                                <label for="address">Address</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ****************PICTURES************** -->
+
+
+                    <div class="row">
+                        <div class="col m6 offset-m3 l6 offset-l3 s10 offset-s1">
+
+                            <h6 style="text-align:center;">UPLOAD PHOTOS</h6>
+                            <div id="picsWrap">
+
+
+
+                                <button onclick="document.getElementById('pic1').click()" class="btn picBtn">
+                                    <input type="file" id="pic1" /> <i class="material-icons">camera_alt</i>
+                                </button>
+
+                                <button onclick="document.getElementById('pic2').click()" class="btn picBtn">
+                                    <input type="file" id="pic2" />  <i class="material-icons">camera_alt</i>
+                                </button>
+
+                                <button onclick="document.getElementById('pic3').click()" class="btn picBtn">
+                                    <input type="file" id="pic3" />  <i class="material-icons">camera_alt</i>
+                                </button>
+
+                                <button onclick="document.getElementById('pic4').click()" class="btn picBtn">
+                                    <input type="file" id="pic4" />  <i class="material-icons">camera_alt</i>
+                                </button>
+
+                                <button onclick="document.getElementById('pic5').click()" class="btn picBtn">
+                                    <input type="file" id="pic5" />  <i class="material-icons">camera_alt</i>
+                                </button>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- *****************SUBMIT BUTTTON**************** -->
+
+                    <div class="row">
+                        <div class="col s12  m12  l12 ">
+                            <button id="submit" class="btn submit hoverable">
+                                SUBMIT
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- ******************SCRIPT*************** -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+
+
+    <script src='../../materialize/js/materialize.min.js'></script>
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyD4sw73H9_XKmsP0xbdBO4iM7sA-bu7jGk",
+            authDomain: "quizappjs-43873.firebaseapp.com",
+            databaseURL: "https://quizappjs-43873.firebaseio.com",
+            projectId: "quizappjs-43873",
+            storageBucket: "quizappjs-43873.appspot.com",
+            messagingSenderId: "100363478078"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="./SubAdd.js"></script>
+    <script>
+
+        $('.dropdown-trigger').dropdown();
+
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+        });
+    </script>
+
+
+
+
+
+</body>
+
+</html>
