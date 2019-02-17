@@ -40,13 +40,13 @@ function loadData() {
       
         wrap.innerHTML = arr.map((v) => {
 
-           return data(v.desc, v.url, v.title,v.adKey);
+           return data(v.desc, v.url, v.title,v.adKey,v.cat);
         }).join("\n");
     })
 }
 
 
-function data(desc, url, title,key) {
+function data(desc, url, title,key,cat) {
     
     return (
 
@@ -59,11 +59,11 @@ function data(desc, url, title,key) {
                 <div class="card-content">
                     <span class="card-title activator grey-text text-darken-4">${title}<i
                             class="material-icons right">more_vert</i></span>
-                    <p><button onClick="go('${key}')" class="btn">Go to add</button></p>
+                    <p><button onClick="go('${key}','${cat}')" class="btn">Go to add</button></p>
                 </div>
                 
                 <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4">Card Title
+                    <span class="card-title grey-text text-darken-4">${cat}
                     <i class="material-icons right">close</i></span>
                     <p>${desc}</p>
                 </div>
@@ -74,8 +74,14 @@ function data(desc, url, title,key) {
 }
 
 
-function go(id) {
+function go(id,cat) {
     console.log(id)
-    localStorage.setItem("Ad",id);
+    let obj=
+    {
+        cat,
+        id
+    }
+    localStorage.setItem("Ad",JSON.stringify(obj));
+    location.assign("../Display/Display.html");
     
 }

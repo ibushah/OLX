@@ -103,12 +103,13 @@ nav
     border:1px solid #ddd;
     padding:5px !important;
     margin:5px;
-    height:450px;
+    
 }
 #pic
 {
     width: 100%;
     padding:5px;
+    height:500px;
 
 }
 
