@@ -86,7 +86,7 @@ input
 .underWrap
 {
     border: 1px solid black;
-   height:100vh;
+   
 }
 
 
@@ -150,18 +150,19 @@ input
 
 
 
-.textArea
+#textareaIn
 {
     /* background: linear-gradient(90deg,#1a0c39,#5a2a4d);
     color:white; */
 
-   height:80px !important;
+   /* height:80px !important; */
     width:94%;
     margin-left: 3%;
-    
-    border:1px solid black;
-    background: linear-gradient(90deg,#1a0c39,#5a2a4d);
    
+    border:1px solid black;
+    background: linear-gradient(90deg,#1a0c39,#5a2a4d) !important;
+    text-indent: 5px;
+       
 
     
 }
@@ -204,15 +205,15 @@ text-indent: 3%;
 {
    
     background: linear-gradient(90deg,#1a0c39,#5a2a4d);
-    width:60px;
-    height: 50px;
+    width:100%;
+    height:50px;
     border-radius: 0px;
     margin-right:10px; 
 }
 
 .picBtn i
 {
-    font-size: 30px;
+    font-size: 24px;
     line-height: 50px;
 }
 
@@ -223,7 +224,7 @@ text-indent: 3%;
     display:none;
 
 }
-#pic2
+/* #pic2
 {
     
     display:none;
@@ -253,9 +254,12 @@ text-indent: 3%;
     display:none;
 
 }
+ */
 
-
-
+textarea
+{
+    color:white !important;
+}
 
 .submit
 {

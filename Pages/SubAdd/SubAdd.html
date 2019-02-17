@@ -22,7 +22,7 @@
         <div class="navbar-fixed ">
             <nav>
                 <div class="nav-wrapper ">
-                    <a href="#!" class="brand-logo " id="logo"><i class="material-icons right"></i>QUIZ APP</a>
+                        <a href="#!" class="brand-logo " id="logo"><i class="material-icons right">shopping_cart</i>OLX</a>
                     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                     <ul class="right hide-on-med-and-down">
                         <li><a href="../../index.html">Home</a></li>
@@ -62,22 +62,21 @@
                     <div class="col l12 m12 s12">
                         <div class="row">
                             <div class="col s12 m12 l12">
-                                <div class="z-depth-5" id="categories">
-                                    <a class='dropdown-trigger' id="cat" href='#' data-target='dropdown1'>CATEGORIES
-                                        &#8744;</a>
 
-                                    <!-- Dropdown Structure -->
-                                    <ul id='dropdown1' class='dropdown-content'>
-                                        <li><a href="#!">Mobiles</a></li>
-                                        <li><a href="#!">Vehicles</a></li>
+                                <div class="input-field col s12 z-depth-5" id="categories">
+                                    <select id="select">
+                                        <optgroup label="">
+                                            <option value="5"  selected disabled>CATEGORIES </option>
+                                            <option value="Mobiles">Mobiles</option>
+                                            <option value="Cars">Cars</option>
+                                            <option value="Clothes">Clothes</option>
+                                            <option value="Jobs">Jobs</option>
+                                            <option value="Books">Books</option>
+                                        </optgroup>
+                                    </select>
 
-                                        <li><a href="#!">Furniture</a></li>
-                                        <li><a href="#!">Jobs</i>four</a></li>
-                                        <li><a href="#!">Fashion</i>five</a></li>
-                                        <li><a href="#!">Book</i>five</a></li>
-
-                                    </ul>
                                 </div>
+                               
                             </div>
                         </div>
                     </div>
@@ -88,7 +87,7 @@
 
                             <div class="input-field col s12 z-depth-5 " id="type">
 
-                                <input  id="typeIn" type="text" autocomplete="off" class="validate">
+                                <input id="typeIn" type="text" autocomplete="off" class="validate">
                                 <label for="type">Type</label>
                             </div>
 
@@ -96,7 +95,7 @@
                         <div class="col l6 m6 s12">
                             <div class="input-field col s12 z-depth-5 " id="title">
 
-                                <input  id="titleIn" type="text" autocomplete="off" class="validate">
+                                <input id="titleIn" type="text" autocomplete="off" class="validate">
                                 <label for="title">Title</label>
                             </div>
                         </div>
@@ -112,8 +111,8 @@
                         <div class="textArea">
                             <div class="input-field  col s12 ">
 
-                                <textarea id="textareaIn" class="materialize-textarea" class="validate"></textarea>
-                                <label for="textarea">Description...</label>
+                                <textarea id="textareaIn" placeholder="Description..."  class="materialize-textarea" class="validate"></textarea>
+                                <!-- <label for="textareaIn"></label> -->
                             </div>
                         </div>
                     </div>
@@ -145,32 +144,33 @@
 
 
                     <div class="row">
-                        <div class="col m6 offset-m3 l6 offset-l3 s10 offset-s1">
+                            <h6 style="text-align:center;">UPLOAD PHOTO</h6>
+                        <div class="col m6 offset-m3 l2 offset-l5 s10 offset-s1">
 
-                            <h6 style="text-align:center;">UPLOAD PHOTOS</h6>
+                            
                             <div id="picsWrap">
 
 
 
-                                <button onclick="document.getElementById('pic1').click()" class="btn picBtn">
+                                <button id="btn1" onclick="document.getElementById('pic1').click()" class="btn picBtn">
                                     <input type="file" id="pic1" /> <i class="material-icons">camera_alt</i>
                                 </button>
-
-                                <button onclick="document.getElementById('pic2').click()" class="btn picBtn">
-                                    <input type="file" id="pic2" />  <i class="material-icons">camera_alt</i>
+<!-- 
+                                <button id="btn2" onclick="document.getElementById('pic2').click()" class="btn picBtn">
+                                    <input type="file" id="pic2" /> <i class="material-icons">camera_alt</i>
                                 </button>
 
-                                <button onclick="document.getElementById('pic3').click()" class="btn picBtn">
-                                    <input type="file" id="pic3" />  <i class="material-icons">camera_alt</i>
+                                <button id="btn3" onclick="document.getElementById('pic3').click()" class="btn picBtn">
+                                    <input type="file" id="pic3" /> <i class="material-icons">camera_alt</i>
                                 </button>
 
-                                <button onclick="document.getElementById('pic4').click()" class="btn picBtn">
-                                    <input type="file" id="pic4" />  <i class="material-icons">camera_alt</i>
+                                <button id="btn4" onclick="document.getElementById('pic4').click()" class="btn picBtn">
+                                    <input type="file" id="pic4" /> <i class="material-icons">camera_alt</i>
                                 </button>
 
-                                <button onclick="document.getElementById('pic5').click()" class="btn picBtn">
-                                    <input type="file" id="pic5" />  <i class="material-icons">camera_alt</i>
-                                </button>
+                                <button id="btn5" onclick="document.getElementById('pic5').click()" class="btn picBtn">
+                                    <input type="file" id="pic5" /> <i class="material-icons">camera_alt</i>
+                                </button> -->
 
 
 
@@ -204,22 +204,34 @@
     <script src='../../materialize/js/materialize.min.js'></script>
 
 
-    <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
-    <script>
-        // Initialize Firebase
-        var config = {
-            apiKey: "AIzaSyD4sw73H9_XKmsP0xbdBO4iM7sA-bu7jGk",
-            authDomain: "quizappjs-43873.firebaseapp.com",
-            databaseURL: "https://quizappjs-43873.firebaseio.com",
-            projectId: "quizappjs-43873",
-            storageBucket: "quizappjs-43873.appspot.com",
-            messagingSenderId: "100363478078"
-        };
-        firebase.initializeApp(config);
+    
+<script src="https://www.gstatic.com/firebasejs/5.8.3/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyA7sWg2m5ttyuKRvrmlsbn5Lo2cS3duYG0",
+    authDomain: "olx-app-730ce.firebaseapp.com",
+    databaseURL: "https://olx-app-730ce.firebaseio.com",
+    projectId: "olx-app-730ce",
+    storageBucket: "olx-app-730ce.appspot.com",
+    messagingSenderId: "958146119350"
+  };
+  firebase.initializeApp(config);
+</script>
     </script>
     <script src="./SubAdd.js"></script>
     <script>
 
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('select');
+            // var instances = M.FormSelect.init(elems, options);
+        });
+
+        // Or with jQuery
+
+        $(document).ready(function () {
+            $('select').formSelect();
+        });
         $('.dropdown-trigger').dropdown();
 
         $(document).ready(function () {

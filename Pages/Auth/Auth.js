@@ -47,6 +47,7 @@
      console.log(obj)
      loader.style.display="none";
      wrap.style.filter = "blur(0px)";
+     location.assign("../SubAdd/SubAdd.html")
 
 
     //  location.assign("../AdminDashboard/AdminDashboard.html")
