@@ -21,16 +21,20 @@
     <!-- ************NAVBAR*********** -->
     <div class="container-fluid">
         <div class="navbar-fixed ">
+            <ul id="dropdown1" class="dropdown-content">
+                <li><a href="../MyAds/MyAds.html">My Ads</a></li>
+                <li><a href="../ChatPage/ChatPage.html">My Chats</a></li>
+                <li class="divider"></li>
+                <li onclick="logOut()"><a href="#!">Logout</a></li>
+            </ul>
             <nav>
                 <div class="nav-wrapper ">
-                        <a href="#!" class="brand-logo " id="logo"><i class="material-icons right">shopping_cart</i>OLX</a>
+                    <a href="#!" class="brand-logo " id="logo"><i class="material-icons right">shopping_cart</i>OLX</a>
                     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                     <ul class="right hide-on-med-and-down">
                         <li><a href="../../index.html">Home</a></li>
-                        <li id="add" class="active"><a href="badges.html">Admin Login</a></li>
-
-                        <li id="fb-li" onClick="fbLogin()"><a href="#"><img id="fb" src="../../images/fb.png" /> Student
-                                Login</a></li>
+                      
+                        <li><a class="dropdown-trigger" id="isLogin" href="#!" data-target="dropdown1"></a></li>
                     </ul>
                 </div>
             </nav>
@@ -40,13 +44,16 @@
     <!-- *****************MOBILE VIEW**************** -->
 
     <ul class="sidenav" id="mobile-demo">
-        <li><a href="../../index.html">Home</a></li>
-        <li><a href="#">Admin Login</a></li>
-
-        <li id="fb-li" onclick="fbLogin()"><a href="#"><img id="fb-mob" src="./../../images/fb.png" />Student
-                Login</a>
-        </li>
-    </ul>
+            <ul id="dropdowner" class="dropdown-content">
+                <li><a href="../Ads/Ads.html">My Ads</a></li>
+                <li><a href="../ChatPage/ChatPage.html">My Chats</a></li>
+                <li class="divider"></li>
+                <li onclick="logOut()"><a href="#!">Logout</a></li>
+            </ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a class="dropdown-trigger" id="isLoginMob" href="#!" data-target="dropdowner"></a></li>
+    
+        </ul>
 
 
 
@@ -65,43 +72,26 @@
 
                 <div class="input-field col s12 z-depth-5 " id="search">
                     <i class="material-icons prefix ">search</i>
-                    <input id="icon_prefix" type="text" autocomplete="off" class="validate">
-                    <label for="icon_prefix">Search</label>
+                    <input style="text-indent:10px;" id="searchIn" type="text" autocomplete="off" class="validate">
+                    <label id="label" for="searchIn">Search</label>
                 </div>
 
             </div>
 
 
             <!-- ***********DROPDOWN************** -->
-            <!-- <div class="col l3 m12 s12">
-                <div class="z-depth-5" id="categories">
-                    <a class='dropdown-trigger' id="cat" href='#' data-target='dropdown1'>CATEGORIES TO SEARCH
-                        &#8744;</a>
-
-
-                    <ul id='dropdown1' class='dropdown-content'>
-                        <li><a href="#!">Mobiles</a></li>
-                        <li><a href="#!">Vehicles</a></li>
-
-                        <li><a href="#!">Furniture</a></li>
-                        <li><a href="#!">Jobs</i>four</a></li>
-                        <li><a href="#!">Fashion</i>five</a></li>
-                        <li><a href="#!">Book</i>five</a></li>
-
-                    </ul>
-                </div>
-            </div> -->
+          
 
             <div class="col col l3 m12 s12">
                 <div class="input-field col s12 z-depth-5" id="categories">
                     <select id="select">
                         <optgroup label="">
-                            <option value="5" selected disabled>CATEGORIES </option>
-                            <option value="Mobiles">Mobiles</option>
-                            <option value="Cars">Cars</option>
-                            <option value="Clothes">Clothes</option>
-                            <option value="Jobs">Jobs</option>
-                            <option value="Books">Books</option>
+                            <option class="opt"  selected disabled>CATEGORIES </option>
+                            <option class="opt" value="Mobiles">Mobiles</option>
+                            <option class="opt" value="Cars">Cars</option>
+                            <option class="opt" value="Clothes">Clothes</option>
+                            <option class="opt" value="Jobs">Jobs</option>
+                            <option class="opt" value="Books">Books</option>
                         </optgroup>
                     </select>
 
@@ -256,6 +246,11 @@
 
 
     <script src='../../materialize/js/materialize.min.js'></script>
+
+
+    <!-- sweet alert -->
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 
 

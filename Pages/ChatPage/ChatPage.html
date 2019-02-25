@@ -10,21 +10,18 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link rel="stylesheet" href="../../materialize/css/materialize.min.css">
-    <link rel="stylesheet" href="./Display.css">
+    <link rel="stylesheet" href="./ChatPage.css">
 </head>
 
 <body>
-
-
 
     <!-- ************NAVBAR*********** -->
 
     <div class="container-fluid">
         <div class="navbar-fixed ">
-
-            <ul id="dropdown1" class="dropdown-content">
+            <ul id="dropdowner" class="dropdown-content">
+                <li><a href="../SubAdd/SubAdd.html">Post ADS</a></li>
                 <li><a href="../MyAds/MyAds.html">My Ads</a></li>
-                <li><a href="../ChatPage/ChatPage.html">My Chats</a></li>
                 <li class="divider"></li>
                 <li onclick="logOut()"><a href="#!">Logout</a></li>
             </ul>
@@ -34,39 +31,47 @@
                     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                     <ul class="right hide-on-med-and-down">
                         <li><a href="../../index.html">Home</a></li>
-                        <li><a class="dropdown-trigger" id="isLogin" href="#!" data-target="dropdown1"></a></li>
+                        <li><a class="dropdown-trigger" id="isLogin" href="#!" data-target="dropdowner"></a></li>
                     </ul>
                 </div>
             </nav>
         </div>
 
     </div>
-    <!-- *****************MOBILE VIEW**************** -->
 
     <ul class="sidenav" id="mobile-demo">
-        <ul id="dropdowner" class="dropdown-content">
-            <li><a href="../Ads/Ads.html">My Ads</a></li>
-            <li><a href="../ChatPage/ChatPage.html">My Chats</a></li>
+        <ul id="dropdown1" class="dropdown-content">
+            <li><a class="mob" href="../SubAdd/SubAdd.html">Post AD</a></li>
+            <li><a class="mob" href="../MyAds/MyAds.html">My Ads</a></li>
             <li class="divider"></li>
-            <li onclick="logOut()"><a href="#!">Logout</a></li>
+            <li class="mob" onclick="logOut()"><a href="#!">Logout</a></li>
         </ul>
-        <li><a href="../../index.html">Home</a></li>
-        <li><a class="dropdown-trigger" id="isLoginMob" href="#!" data-target="dropdowner"></a></li>
+        <li><a class="mobNav" href="../../index.html">Home</a></li>
+        <li><a class="dropdown-trigger mobNav" id="isLoginMob" href="#!" data-target="dropdown1"></a></li>
 
     </ul>
-    <!-- ********************ADS************ -->
-
-    <div class="container-fluid">
-        <h1 style="color:rgb(99, 9, 99);" class="head">AD DETAILS</h1>
-        <div class="row " id="wrap">
 
 
+    <div id="wrap">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col l10 offset-l1 m10 offset-m1 s12 ">
+                    <h3 id="h1">PEOPLE TO CHAT</h3>
+                    <div class="wrapper" id="inset">
+                        <ul id="ulStyle">
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
+    <!-- *******loader****** -->
 
-
-
+    <div class="loader" id="load"></div>
 
     <!-- ******************SCRIPT*************** -->
 
@@ -77,12 +82,7 @@
     <script src='../../materialize/js/materialize.min.js'></script>
 
 
-    <!-- sweet alert -->
-
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-
-
-
+  
     <script src="https://www.gstatic.com/firebasejs/5.8.3/firebase.js"></script>
     <script>
         // Initialize Firebase
@@ -97,7 +97,7 @@
         firebase.initializeApp(config);
     </script>
     </script>
-    <script src="./Display.js"></script>
+    <script src="./ChatPage.js"></script>
     <script>
 
         document.addEventListener('DOMContentLoaded', function () {
@@ -107,15 +107,16 @@
 
         // Or with jQuery
 
-        $(document).ready(function () {
-            $('select').formSelect();
-        });
+        // $(document).ready(function () {
+        //     $('select').formSelect();
+        // });
         $('.dropdown-trigger').dropdown();
 
         $(document).ready(function () {
             $('.sidenav').sidenav();
         });
     </script>
+
 
 </body>
 

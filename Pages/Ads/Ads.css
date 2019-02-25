@@ -67,37 +67,30 @@ nav
 {
     color:purple !important;
 }
-
-#fb
+#dropdowner li a
 {
-    width:23px;
-    float: left;
-    margin-top:22px; 
-    margin-right: 8px; 
+  color:purple
 }
 
 
-#fb-mob
-{
-    width:23px;
-    float: left;
-    margin-top: 12px;
-    margin-right: 4px;
-}
-/* 
-#add
-{
-    background-color: rgb(77, 137, 206);
-    box-sizing:content-box;
-    width: 90px;
-   border: 1px solid black;
-} */
+
 
 /* ***********BELOW NAVBAR************ */
 
 input
 {
     color: white !important;
+}
+
+.material-icons
+{
+    background-color: transparent !important;
+}
+
+#label
+{
+    background-color: transparent !important;
+
 }
 
 #search
@@ -119,6 +112,9 @@ input
    
 }
 
+.opt{
+    color: purple !important;
+}
 #cat
 {
     height:55px !important;
@@ -152,6 +148,12 @@ input
   /* **************CARDS************ */
 
 
+  .door
+  {
+      width: 100%;
+      margin-top: 25px;
+
+  }
 .card {
     width: 80%;
     left: 10%;
@@ -163,6 +165,7 @@ input
 .cardImg
 {
     height:180px;
+    width: 100% !important;
     
 }
 

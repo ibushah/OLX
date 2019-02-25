@@ -10,20 +10,19 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link rel="stylesheet" href="../../materialize/css/materialize.min.css">
-    <link rel="stylesheet" href="./Display.css">
+    <link rel="stylesheet" href="./MyAds.css">
 </head>
 
 <body>
 
 
 
-    <!-- ************NAVBAR*********** -->
 
+    <!-- ************NAVBAR*********** -->
     <div class="container-fluid">
         <div class="navbar-fixed ">
-
             <ul id="dropdown1" class="dropdown-content">
-                <li><a href="../MyAds/MyAds.html">My Ads</a></li>
+                <li><a href="../SubAdd/SubAdd.html">Post ADS</a></li>
                 <li><a href="../ChatPage/ChatPage.html">My Chats</a></li>
                 <li class="divider"></li>
                 <li onclick="logOut()"><a href="#!">Logout</a></li>
@@ -44,27 +43,32 @@
     <!-- *****************MOBILE VIEW**************** -->
 
     <ul class="sidenav" id="mobile-demo">
-        <ul id="dropdowner" class="dropdown-content">
-            <li><a href="../Ads/Ads.html">My Ads</a></li>
-            <li><a href="../ChatPage/ChatPage.html">My Chats</a></li>
-            <li class="divider"></li>
-            <li onclick="logOut()"><a href="#!">Logout</a></li>
+            <ul id="dropdowner" class="dropdown-content">
+                <li><a class="mob" href="../SubAdd/SubAdd.html">Post AD</a></li>
+                <li><a class="mob" href="../ChatPage/ChatPage.html">My Chats</a></li>
+                <li class="divider"></li>
+                <li class="mob" onclick="logOut()"><a href="#!">Logout</a></li>
+            </ul>
+            <li><a class="mobNav" href="../../index.html">Home</a></li>
+            <li><a  class="dropdown-trigger mobNav" id="isLoginMob" href="#!" data-target="dropdowner"></a></li>
+    
         </ul>
-        <li><a href="../../index.html">Home</a></li>
-        <li><a class="dropdown-trigger" id="isLoginMob" href="#!" data-target="dropdowner"></a></li>
-
-    </ul>
-    <!-- ********************ADS************ -->
-
-    <div class="container-fluid">
-        <h1 style="color:rgb(99, 9, 99);" class="head">AD DETAILS</h1>
-        <div class="row " id="wrap">
 
 
-        </div>
+
+    <div class="container">
+        <h2 style="text-align:center;font-weight: bold;color: rgb(58, 4, 58);">MY ADS</h2>
     </div>
 
 
+
+    <!-- ******************ADS**************** -->
+
+
+
+    <div class="row" id="adds">
+
+    </div>
 
 
 
@@ -97,7 +101,7 @@
         firebase.initializeApp(config);
     </script>
     </script>
-    <script src="./Display.js"></script>
+    <script src="./MyAds.js"></script>
     <script>
 
         document.addEventListener('DOMContentLoaded', function () {

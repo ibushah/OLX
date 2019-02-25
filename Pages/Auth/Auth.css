@@ -97,12 +97,12 @@ nav
 #signupForm
 {
 display: none;
-margin-top: 5% !important;
+margin-top: 0% !important;
 }
 
 #loginForm
 {
-  margin-top: 5% !important;
+  margin-top: 1% !important;
 }
  /* ******************FORM STYLING************ */
  
@@ -111,8 +111,18 @@ margin-top: 5% !important;
   
     background: linear-gradient(90deg,#1a0c39,#5a2a4d);
    
-   margin-top: 5%;
+   /* margin-top: 5%; */
    height:400px;
+   border-radius:3px; 
+}
+
+.signupWrap
+{
+    
+    background: linear-gradient(90deg,#1a0c39,#5a2a4d) !important;
+   
+ 
+   height:470px;
    border-radius:3px; 
 }
 
@@ -259,6 +269,6 @@ input:focus
       width: 200px;
       height: 200px;
      
-      left: 30%;
+      left: 25%;
   }
  }

@@ -68,21 +68,9 @@ nav
     color:purple !important;
 }
 
-#fb
+#chatPage
 {
-    width:23px;
-    float: left;
-    margin-top:22px; 
-    margin-right: 8px; 
-}
-
-
-#fb-mob
-{
-    width:23px;
-    float: left;
-    margin-top: 12px;
-    margin-right: 4px;
+    display: none;
 }
 /* 
 #add
@@ -114,6 +102,17 @@ nav
    
 }
 
+
+.material-icons
+{
+    background-color: transparent !important;
+}
+
+#label
+{
+    background-color: transparent !important;
+
+}
 #cat
 {
     height:55px !important;
@@ -132,6 +131,16 @@ nav
 
 }
 
+#dropdowner li a
+{
+    color: purple;
+}
+
+#dropdowner li a:hover
+{
+    color:white;
+}
+
 
 
 /* *************BODY IMAGE************* */
@@ -139,7 +148,7 @@ nav
 
 #img
 {   
-    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url("../Images/pic.jpg");
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url("./Images/back.jpg");
     height: 80vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -164,11 +173,35 @@ nav
 .card {
     width: 80%;
     left: 10%;
+    
 
+}
+
+.door
+{
+    margin-top: 25px;
+    /* height:100px; */
 }
 
 
 
+.cardImg
+{
+    height:200px;
+    
+}
+
+.btn
+{
+    background: linear-gradient(90deg,#1a0c39,#5a2a4d);
+}
+
+
+
+input
+{
+    color:white !important;
+}
 
 
 .btn

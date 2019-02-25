@@ -68,23 +68,21 @@ nav
     color:purple !important;
 }
 
-#fb
+#dropdowner li a
 {
-    width:23px;
-    float: left;
-    margin-top:22px; 
-    margin-right: 8px; 
+  color:purple
+}
+#dropdown1 li a
+{
+  color:purple
 }
 
 
-#fb-mob
-{
-    width:23px;
-    float: left;
-    margin-top: 12px;
-    margin-right: 4px;
-}
 
+#dropdowner li a:hover
+{
+    color:white !important;
+}
 
 /* ******************BODY*************** */
 #head
